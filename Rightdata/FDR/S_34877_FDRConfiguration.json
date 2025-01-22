@@ -23,7 +23,7 @@
         "IsfromValidation": false,
         "Iswait": null,
         "JsonIMDB": null,
-        "JsonUI": "[{\"widgetId\":\"dsStart_dropped\",\"UniqueId\":\"0\",\"stepId\":\"0\",\"description\":\"Swami 1/22/2025 6:06:50 AM\",\"position\":\"position: absolute; left: 83px; top: 202.5px;\",\"mapping\":\"\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"commented\":\"false\"},{\"widgetId\":\"dsRelTable_dropped_2\",\"UniqueId\":\"2\",\"stepId\":\"2\",\"description\":\"Read data from \\\"TPCH_1.dbo.SUPPLIER\\\" for data source \\\"MSSQL_J\\\"\",\"position\":\"position: absolute; left: 304.571px; top: 302.643px;\",\"mapping\":\"2,2-[0,0]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"commented\":\"false\"},{\"widgetId\":\"dsRecon_3\",\"UniqueId\":\"15\",\"stepId\":\"3\",\"description\":\"Map source & target fields\",\"position\":\"position: absolute; left: 541.571px; top: 191.643px;\",\"mapping\":\"15,3-[3,5-2,2]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"commented\":\"false\"},{\"widgetId\":\"dsEmail_dropped_4\",\"UniqueId\":\"20\",\"stepId\":\"4\",\"description\":\"Email\",\"position\":\"position: absolute; left: 742.571px; top: 193.643px;\",\"mapping\":\"20,4-[15,3]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"commented\":\"false\"},{\"widgetId\":\"dsExistingQuery_dropped_5\",\"UniqueId\":\"3\",\"stepId\":\"5\",\"description\":\"Read data from \\\"suplier_query\\\" for data source \\\"_2025_01_10_14_54_36_supplier_1\\\"\",\"position\":\"position: absolute; left: 318.571px; top: 110.643px;\",\"mapping\":\"3,5-[0,0]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"commented\":\"false\"}]",
+        "JsonUI": "[{\"widgetId\":\"dsStart_dropped\",\"UniqueId\":\"0\",\"stepId\":\"0\",\"description\":\"Swami 1/22/2025 6:06:50 AM\",\"position\":\"position: absolute; left: 83px; top: 202.5px;\",\"mapping\":\"\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"commented\":\"false\"},{\"widgetId\":\"dsRelTable_dropped_2\",\"UniqueId\":\"2\",\"stepId\":\"2\",\"description\":\"Read data from \\\"TPCH_1.dbo.SUPPLIER\\\" for data source \\\"MSSQL_J\\\"\",\"position\":\"position: absolute; left: 304.571px; top: 302.643px;\",\"mapping\":\"2,2-[0,0]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"commented\":\"false\"},{\"widgetId\":\"dsRecon_3\",\"UniqueId\":\"15\",\"stepId\":\"3\",\"description\":\"Map source & target fields\",\"position\":\"position: absolute; left: 541.571px; top: 191.643px;\",\"mapping\":\"15,3-[3,5-2,2]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"commented\":\"false\"},{\"widgetId\":\"dsEmail_dropped_4\",\"UniqueId\":\"20\",\"stepId\":\"4\",\"description\":\"Email\",\"position\":\"position: absolute; left: 742.571px; top: 193.643px;\",\"mapping\":\"20,4-[15,3]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"commented\":\"false\"},{\"widgetId\":\"dsExistingQuery_dropped_5\",\"UniqueId\":\"3\",\"stepId\":\"5\",\"description\":\"Read data from \\\"suplier_query\\\" for data source \\\"_2025_01_10_14_54_36_supplier_1\\\"\",\"position\":\"position: absolute; left: 318.571px; top: 110.643px;\",\"mapping\":\"3,5-[0,0]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"commented\":\"false\"},{\"widgetId\":\"MSTeams_dropped_6\",\"UniqueId\":\"156\",\"stepId\":\"6\",\"description\":\"MS Teams\",\"position\":\"position: absolute; left: 747.8px; top: 362.638px;\",\"mapping\":\"156,6-[15,3]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"commented\":\"false\"}]",
         "LevelOne_Id": null,
         "LevelTwo_Id": null,
         "LevelThree_Id": null,
@@ -713,6 +713,43 @@
         "RunTimeJSON": null,
         "IsMLRecommended": null,
         "QueryTimeOut": null
+      },
+      {
+        "Id": 351587,
+        "ScenarioId": 34877,
+        "QueryId": null,
+        "Job_Id": null,
+        "Step": 6,
+        "StepMapping": "156,6-[15,3]",
+        "TransformationId": 156,
+        "Description": "MS Teams",
+        "Position": "position: absolute; left: 747.8px; top: 362.638px;",
+        "CreatedOn": "2025-01-22T16:02:41.49",
+        "CreatedBy": 108,
+        "ModifiedOn": "2025-01-22T16:02:52.487",
+        "ModifiedBy": 108,
+        "Status": true,
+        "ErrorCodes": null,
+        "SourceOrTarget": null,
+        "DataSourcePK_Id": null,
+        "Warning": false,
+        "JobletId": null,
+        "Decision": null,
+        "MaxPacketSize": null,
+        "MaxParallelism": null,
+        "IsLastStep": null,
+        "PreviousMetaStructure": null,
+        "Overwritesnapshot": null,
+        "IsPreBlend": null,
+        "BlendStepId": null,
+        "LATEST_OUTPUT_VIEW_NAME": null,
+        "JsonValue": null,
+        "AppendToExistingData": null,
+        "IsActive": true,
+        "Comments": null,
+        "RunTimeJSON": null,
+        "IsMLRecommended": null,
+        "QueryTimeOut": null
       }
     ],
     "MigrateQCData": [],
@@ -1126,7 +1163,19 @@
         "JobId": null
       }
     ],
-    "ThirdPartyAPIParams": [],
+    "ThirdPartyAPIParams": [
+      {
+        "Id": 24146,
+        "APIInte_ID": 107,
+        "APIParamLookupTypeId": 2,
+        "ParamName": "InstanceName",
+        "ParamterValue": "[\"MS Teams\"]",
+        "ScenarioId": 34877,
+        "DependantStepId": null,
+        "SessionId": null,
+        "RuleId": null
+      }
+    ],
     "EmailAlerts": [
       {
         "Id": 22696,
