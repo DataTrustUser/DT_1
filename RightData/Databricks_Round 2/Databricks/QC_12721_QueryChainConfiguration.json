@@ -26,7 +26,7 @@
         "AzurePreViewPath": null,
         "PacketSize": null,
         "QueryDescription": "sarada 3/3/2025 11:18:11 AM",
-        "JSON": "[{\"widgetId\":\"dsStart_dropped\",\"UniqueId\":\"0\",\"stepId\":\"0\",\"description\":\"Databrciks_Projections_Numeric functions\",\"position\":\"position: absolute; left: 83px; top: 210.5px;\",\"warning\":null,\"decision\":null,\"status\":\"true\"},{\"widgetId\":\"dsRelTable_dropped.1\",\"UniqueId\":\"2\",\"stepId\":\"1\",\"description\":\"Read data from \\\"rightdata_datasets.tpch1.supplier\\\" for data source \\\"Databrciks_Azure\\\"\",\"position\":\"position: absolute; left: 277.638px; top: 204.638px;\",\"mapping\":\"2,1-[0,0]\",\"warning\":null,\"decision\":null,\"status\":\"true\"},{\"widgetId\":\"dcSimpleProjection_dropped.2\",\"UniqueId\":\"65\",\"stepId\":\"2\",\"description\":\"Transform the data from Data Source\",\"position\":\"position: absolute; left: 456.8px; top: 207.638px;\",\"mapping\":\"65,2-[2,1]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"dsstep\":\"1\"},{\"widgetId\":\"dcDeduplication_dropped.3\",\"UniqueId\":\"85\",\"stepId\":\"3\",\"description\":\"Remove duplicates from selected columns\",\"position\":\"position: absolute; left: 616.8px; top: 221.638px;\",\"mapping\":\"85,3-[65,2]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"dsstep\":\"1\"},{\"widgetId\":\"qcEndItem_dropped.4\",\"UniqueId\":\"79\",\"stepId\":\"4\",\"description\":\"RD Output\",\"position\":\"position: absolute; left: 783.8px; top: 221.638px;\",\"mapping\":\"79,4-[85,3]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"dsstep\":\"3\"},{\"widgetId\":\"DataProfiling_dropped.5\",\"UniqueId\":\"80\",\"stepId\":\"5\",\"description\":\"Data Profiling\",\"position\":\"position: absolute; left: 1020.8px; top: 168.638px;\",\"mapping\":\"80,5-[79,4]\",\"warning\":null,\"decision\":null,\"status\":\"true\"},{\"widgetId\":\"File_dropped.6\",\"UniqueId\":\"88\",\"stepId\":\"6\",\"description\":\"Offload the File\",\"position\":\"position: absolute; left: 1004.8px; top: 306.638px;\",\"mapping\":\"88,6-[79,4]\",\"warning\":null,\"decision\":null,\"status\":\"true\"}]",
+        "JSON": "[{\"widgetId\":\"dsStart_dropped\",\"UniqueId\":\"0\",\"stepId\":\"0\",\"description\":\"Databrciks_Projections_Numeric functions_Profiling\",\"position\":\"position: absolute; left: 83px; top: 210.5px;\",\"warning\":null,\"decision\":null,\"status\":\"true\"},{\"widgetId\":\"dsRelTable_dropped.1\",\"UniqueId\":\"2\",\"stepId\":\"1\",\"description\":\"Read data from \\\"rightdata_datasets.tpch1.supplier\\\" for data source \\\"Databrciks_Azure\\\"\",\"position\":\"position: absolute; left: 277.638px; top: 204.638px;\",\"mapping\":\"2,1-[0,0]\",\"warning\":null,\"decision\":null,\"status\":\"true\"},{\"widgetId\":\"dcSimpleProjection_dropped.2\",\"UniqueId\":\"65\",\"stepId\":\"2\",\"description\":\"Transform the data from Data Source\",\"position\":\"position: absolute; left: 456.8px; top: 207.638px;\",\"mapping\":\"65,2-[2,1]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"dsstep\":\"1\"},{\"widgetId\":\"dcDeduplication_dropped.3\",\"UniqueId\":\"85\",\"stepId\":\"3\",\"description\":\"Remove duplicates from selected columns\",\"position\":\"position: absolute; left: 616.8px; top: 221.638px;\",\"mapping\":\"85,3-[65,2]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"dsstep\":\"1\"},{\"widgetId\":\"qcEndItem_dropped.4\",\"UniqueId\":\"79\",\"stepId\":\"4\",\"description\":\"RD Output\",\"position\":\"position: absolute; left: 783.8px; top: 221.638px;\",\"mapping\":\"79,4-[85,3]\",\"warning\":null,\"decision\":null,\"status\":\"true\",\"dsstep\":\"3\"},{\"widgetId\":\"DataProfiling_dropped.5\",\"UniqueId\":\"80\",\"stepId\":\"5\",\"description\":\"Data Profiling\",\"position\":\"position: absolute; left: 1020.8px; top: 168.638px;\",\"mapping\":\"80,5-[79,4]\",\"warning\":null,\"decision\":null,\"status\":\"true\"},{\"widgetId\":\"Email_dropped.7\",\"UniqueId\":\"20\",\"stepId\":\"7\",\"description\":\"Email\",\"position\":\"position: absolute; left: 971.8px; top: 270.638px;\",\"mapping\":\"20,7-[79,4]\",\"warning\":null,\"decision\":null,\"status\":\"true\"}]",
         "TypeofQuery": "QueryChain",
         "UserName": "sarada",
         "FId": 122567,
@@ -433,16 +433,16 @@
         "QueryTimeOut": null
       },
       {
-        "Id": 357294,
+        "Id": 357295,
         "ScenarioId": null,
         "QueryId": 12721,
         "Job_Id": null,
-        "Step": 6,
-        "StepMapping": "88,6-[79,4]",
-        "TransformationId": 88,
-        "Description": "Offload the File",
-        "Position": "position: absolute; left: 1004.8px; top: 306.638px;",
-        "CreatedOn": "2025-03-03T11:39:58.853",
+        "Step": 7,
+        "StepMapping": "20,7-[79,4]",
+        "TransformationId": 20,
+        "Description": "Email",
+        "Position": "position: absolute; left: 971.8px; top: 270.638px;",
+        "CreatedOn": "2025-03-03T11:41:29.007",
         "CreatedBy": "127",
         "ModifiedOn": null,
         "ModifiedBy": null,
@@ -761,9 +761,41 @@
         "JobletId": null,
         "Decision": null,
         "JobId": null
+      },
+      {
+        "Id": 255259,
+        "ScenarioId": null,
+        "QueryId": 12721,
+        "StepId": 7,
+        "Dependency": 20,
+        "JobletId": null,
+        "Decision": null,
+        "JobId": null
       }
     ],
-    "EmailAlerts": [],
+    "EmailAlerts": [
+      {
+        "Query_Id": 12721,
+        "Job_Id": null,
+        "FailRDjobWhenRecon_F": null,
+        "DelayedTargetCompare": null,
+        "AttachResultsInEmail": true,
+        "ExportType": null,
+        "RaiseDefect": null,
+        "ModifiedOn": null,
+        "ModifiedBy": null,
+        "Status": null,
+        "DependantStepId": 0,
+        "Scenario_Header_Id": null,
+        "WhenFaild": false,
+        "EmailWhen_F": null,
+        "WhenSuccess": true,
+        "EmailWhen_S": "sarada.manne@getrightdata.com",
+        "CreatedBy": "127",
+        "CreatedOn": "2025-03-03T11:41:28.9",
+        "EmailTemplateId": null
+      }
+    ],
     "DataProfilings": [
       {
         "Id": 15413,
@@ -1205,26 +1237,6 @@
     "PivotDetails": [],
     "UnPivotDetails": [],
     "PivotFieldType": [],
-    "FileOffload": [
-      {
-        "Id": 3864,
-        "Type": null,
-        "IsFileCreated": null,
-        "FileName": "QC_12721_Databrciks_Projections_Numeric_functions",
-        "FilePath": null,
-        "FileSize": null,
-        "FileCreatedOn": "2025-03-03T11:39:58.867",
-        "FolderId": 0,
-        "ScenarioId": null,
-        "JobId": null,
-        "QueryId": 12721,
-        "SessionId": null,
-        "Row_Count": null,
-        "Delimiter": ",",
-        "TextQualifier": "\"",
-        "OverrideFile": false,
-        "Header": true
-      }
-    ]
+    "FileOffload": []
   }
 ]
