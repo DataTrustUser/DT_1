@@ -49,7 +49,7 @@
         "ExceptionsLimit": null,
         "IsAutoMap": false,
         "UnSelectedColumnsJson": "{\"srcUnmappedCols\":null,\"tgtUnmappedCols\":null}",
-        "EnableExternalLink": false,
+        "EnableExternalLink": true,
         "EmailTemplateJSON": "{\"TemplateType\":\"Default\",\"TemplatedId\":\"\",\"IncludeQueryChain\":null,\"IncludeFDR\":null,\"IncludeValidation\":null,\"IncludeTDR\":null,\"IncludeBDV\":null,\"HTML\":null}",
         "UserAssignedDate": null,
         "TDRPullCheckSum": null,
